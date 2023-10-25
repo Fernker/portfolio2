@@ -1,11 +1,16 @@
-<p>project works!</p>
-<ng-content select="img"></ng-content>
-<ng-content select="portfolio-project-title"></ng-content>
-<ng-content select="portfolio-tech-badges"></ng-content>
-<ng-content> </ng-content>
-<ng-content select="portfolio-project-actions"></ng-content>
-<!-- Project Image (just img tag) -->
-<!-- Project Title -->
-<!-- tech badges (new component) -->
-<!-- Project Content -->
-<!-- Project controls -->
+<section class="project">
+    <div class="project__img">
+        <ng-content select="img"></ng-content>
+    </div>
+    <div class="project__content">
+        <h3>
+            <ng-content select="portfolio-project-title"></ng-content>
+        </h3>
+        <div>
+            Made with:
+            <ng-content select="portfolio-tech-badges"></ng-content>
+        </div>
+        <ng-content> </ng-content>
+        <ng-content select="portfolio-project-actions"></ng-content>
+    </div>
+</section>

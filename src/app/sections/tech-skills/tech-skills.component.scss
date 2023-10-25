@@ -1,0 +1,15 @@
+:host {
+    display: block;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    &__badges {
+        display: flex;
+        gap: 20px;
+    }
+}
